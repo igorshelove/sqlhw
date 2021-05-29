@@ -85,13 +85,13 @@ group by CITY;
 --task5  (lesson9)
 -- oracle: https://www.hackerrank.com/challenges/weather-observation-station-11/problem
 select CITY from STATION
-where not REGEXP_LIKE(lower(CITY), '^[^aieou]|.*?[^aeiou]$')
+where REGEXP_LIKE(lower(CITY), '^[^aieou]|.*?[^aeiou]$')
 group by CITY;
 
 --task6  (lesson9)
 -- oracle: https://www.hackerrank.com/challenges/weather-observation-station-12/problem
 select CITY from STATION
-where not REGEXP_LIKE(lower(CITY), '^[^aieou]|.*?^[^aeiou]$')
+where REGEXP_LIKE(lower(CITY), '^[^aieou]|.*?^[^aeiou]$')
 group by CITY;
 --task7  (lesson9)
 -- oracle: https://www.hackerrank.com/challenges/salary-of-employees/problem
